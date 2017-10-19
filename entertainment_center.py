@@ -1,5 +1,7 @@
+#imports media and fresh_tomatoes python files
 import media, fresh_tomatoes
 
+#Instantiates 6 movie objects
 toy_story = media.Movie("Toy Story", "A story of a boy and his toys that come to life",
                        "http://www.gstatic.com/tv/thumb/movieposters/17420/p17420_p_v8_ab.jpg",
                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
@@ -22,7 +24,10 @@ indiana = media.Movie("Indiana Jones: The Last Crusade", "Indiana Jones goes on 
 wonder = media.Movie("Wonder Woman", "She fights a war to end all wars and discovers her true destiny", "http://t1.gstatic.com/images?q=tbn:ANd9GcQcCAOmt-FsRsR8GebIzI67qSvdQ2JLYDRLxeAcbH-541fzqq1H",
 	"https://www.youtube.com/watch?v=VSB4wGIdDwo")
 
+#Makes a list of movie objects
 movies = [toy_story, avatar, ai, rat, indiana, wonder]
+
+#uses fresh_tomatoes.py to make a website that displays all the movies.
 fresh_tomatoes.open_movies_page(movies)
 
 
